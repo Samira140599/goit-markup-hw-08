@@ -1,0 +1,35 @@
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+.clients:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
+
+.clients-link {
+  display: block;
+  background-color: $white-color;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  color: #afb1b8;
+  transition-property: --color1, border;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  & :hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    --color1: $accent-color;
+  }
+}

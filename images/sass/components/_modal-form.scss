@@ -1,0 +1,40 @@
+.modal-form {
+  min-width: 528px;
+  min-height: 600px;
+}
+.form-header {
+  display: block;
+  color: $dark-color;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 2px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.field {
+  height: 40px;
+  width: 406px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  padding-left: 42px;
+  outline-color: $accent-color;
+}
+
+.modal-field {
+  position: relative;
+  padding-left: 40px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.label {
+  text-align: left;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $main-color;
+}

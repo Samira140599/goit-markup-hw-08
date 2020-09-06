@@ -1,0 +1,33 @@
+.section-title {
+  color: $dark-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 3%;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.team-list,
+.what-we-do-list,
+.clients-list {
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 460px) {
+    width: 460px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}

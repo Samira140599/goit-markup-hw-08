@@ -1,0 +1,47 @@
+.hero {
+  margin-bottom: 94px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $dark-color;
+
+  @media screen and (min-width: 460px) {
+    width: 480px;
+    height: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1600px;
+    height: 600px;
+  }
+}
+.overlay {
+  margin-bottom: 60;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-title {
+  text-transform: uppercase;
+  line-height: 1.36;
+  text-align: Center;
+  letter-spacing: 6%;
+  padding-top: 200px;
+  margin: 0;
+  color: $white-color;
+  @media screen and (min-width: 460px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
+}

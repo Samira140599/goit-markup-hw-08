@@ -1,0 +1,37 @@
+.advantages-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.advantages-list-items {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.descriptions {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 3%;
+  margin: 0;
+}
+.advantages-title {
+  color: $dark-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 3%;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.advantages-items {
+  display: block;
+  width: 70px;
+  height: 70px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}

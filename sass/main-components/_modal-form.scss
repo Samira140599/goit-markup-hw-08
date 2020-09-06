@@ -1,0 +1,62 @@
+.modal-form {
+  min-width: 528px;
+  min-height: 580px;
+}
+.form-header {
+  display: block;
+  color: $dark-color;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  margin-bottom: 2px;
+  padding-top: 40px;
+  text-align: center;
+}
+.label {
+  text-align: left;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: $main-color;
+}
+.field {
+  height: 40px;
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 0;
+  cursor: pointer;
+  padding-left: 42px;
+  outline-color: $accent-color;
+
+  &:focus-within + .tel-svg {
+    --color1: $accent-color;
+  }
+  &:focus-within + .mail-svg {
+    --color1: $accent-color;
+  }
+  &:focus-within + .name-svg {
+    --color1: $accent-color;
+  }
+}
+
+.modal-field {
+  position: relative;
+  padding-left: 40px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-form {
+  height: 600px;
+}
+
+.name-svg,
+.tel-svg,
+.mail-svg {
+  position: absolute;
+  top: 30px;
+  left: 55px;
+  --color1: #000000;
+}

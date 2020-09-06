@@ -1,0 +1,47 @@
+.policy-label {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $main-color;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    width: 12px;
+    height: 11px;
+    border: 2px solid $dark-color;
+    border-radius: 3px;
+  }
+}
+.form-link {
+  color: $accent-color;
+}
+.checkbox + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.сheckbox + label::before {
+  content: "";
+  display: inline-block;
+  background-color: $accent-color;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  border-color: $accent-color;
+}
+.custom-checkbox:not(:checked) + label::before {
+  background-image: none;
+}
+.checkbox-field .custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox-field {
+  display: flex;
+  padding-left: 40px;
+  margin-top: 20px;
+}

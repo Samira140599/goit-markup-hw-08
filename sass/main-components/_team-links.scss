@@ -1,0 +1,29 @@
+.social-links {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  fill: #afb1b8;
+  background-color: $white-color;
+  justify-content: center;
+  transition-property: $timing-function;
+  transition-duration: 250ms;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $white-color;
+  }
+}
+.social-links-list {
+  display: flex;
+  padding-bottom: 24px;
+  justify-content: center;
+}
+.social-links-svg {
+  width: 20px;
+  height: 20px;
+  display: block;
+  align-self: center;
+  fill: currentColor;
+}

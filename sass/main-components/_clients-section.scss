@@ -1,0 +1,33 @@
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  fill: #afb1b8;
+}
+
+.clients-link {
+  flex-basis: calc((100% - 4 * 15px) / 2);
+  margin: 15px;
+  display: block;
+  background-color: $white-color;
+
+  border: 1px solid #afb1b8;
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+}
