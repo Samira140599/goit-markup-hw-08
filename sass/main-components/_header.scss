@@ -1,5 +1,5 @@
 .header-container {
-  //display: flex;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
@@ -13,10 +13,16 @@
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
-    width: 1200px;
+    width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
-
+.contacts-list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 .logo {
   font-family: Raleway;
   font-weight: bold;
@@ -25,8 +31,14 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: #000000;
-  margin-right: 85px;
-  padding-left: 215px;
+  margin-right: 88px;
+  @media screen and (min-width: 460px) {
+    padding-left: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 215px;
+  }
 }
 
 .part-of-logo {
@@ -40,10 +52,8 @@
 
 .site-nav {
   display: flex;
-  margin: 0;
-
-  & .item:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
   }
 }
 .site-nav-link {
@@ -54,7 +64,7 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 2%;
-  margin: 0;
+  margin-right: 50px;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
@@ -75,15 +85,6 @@
 .site-nav-link:focus,
 .site-nav-link.site-nav-link.current {
   color: $accent-color;
-}
-
-.contacts-list {
-  display: flex;
-  margin-left: auto;
-
-  &:last-child {
-    padding-right: 215px;
-  }
 }
 
 .contacts-link {

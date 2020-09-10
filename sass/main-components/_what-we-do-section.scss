@@ -1,7 +1,19 @@
 .what-we-do-list {
   display: flex;
 }
-
+.what-we-do-section {
+  @media screen and (max-width: 1199px) {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    /*i=IE6, IE7*/
+    clip: rect(1px 1px 1px 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+}
 .what-we-do-items:not(:last-child) {
   margin-right: 30px;
 }

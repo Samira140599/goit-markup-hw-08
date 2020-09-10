@@ -1,8 +1,11 @@
 .policy-label {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: $main-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 
   &::before {
     content: "";

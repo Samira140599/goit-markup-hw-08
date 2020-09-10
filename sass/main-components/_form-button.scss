@@ -16,5 +16,11 @@
 }
 .button-field {
   display: flex;
-  padding-left: 165px;
+  @media screen and (min-width: 460px) {
+    padding-left: 125px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-left: 165px;
+  }
 }
