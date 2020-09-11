@@ -2,16 +2,14 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 460px) {
-    width: 480px;
-  }
+  width: 100%;
+
   @media screen and (min-width: 768px) {
     margin-top: 60px;
-    width: 768px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    width: 1600px;
+    min-width: 1200px;
   }
 }
 
@@ -47,6 +45,7 @@
   }
 }
 .footer-list {
+  width: fit-content;
   display: flex;
   @media screen and (min-width: 460px) and (max-width: 767px) {
     margin-top: 20px;

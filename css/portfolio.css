@@ -395,18 +395,12 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-@media screen and (min-width: 460px) {
-  .footer {
-    width: 480px;
-  }
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     margin-top: 60px;
-    width: 768px;
   }
 }
 
@@ -415,7 +409,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 1600px;
+    min-width: 1200px;
   }
 }
 
@@ -456,6 +450,9 @@ img {
 }
 
 .footer-list {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -594,23 +591,8 @@ img {
   width: 100%;
 }
 
-@media screen and (min-width: 460px) {
-  .header-container {
-    min-width: 480px;
-    height: 60px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
-  .header-container {
-    min-width: 1570px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .header-container .contacts-list {
+  .contacts-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -636,7 +618,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .logo {
-    padding-left: 215px;
+    padding-left: 200px;
   }
 }
 
@@ -829,8 +811,8 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts-link {
-    margin-right: 30px;
+  .contacts-link:not(last-child) {
+    margin-left: 30px;
   }
 }
 
@@ -839,7 +821,7 @@ img {
 }
 
 .contacts-list {
-  margin-left: 140px;
+  margin-left: 120px;
 }
 
 .contacts-item {
