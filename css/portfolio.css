@@ -409,7 +409,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-width: 1200px;
+    min-width: 1600px;
   }
 }
 
