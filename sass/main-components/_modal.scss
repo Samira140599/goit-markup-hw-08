@@ -17,6 +17,7 @@
 }
 .modal {
   position: absolute;
+  padding-right: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -26,4 +27,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms $timing-function;
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+  }
 }

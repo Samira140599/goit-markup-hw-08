@@ -653,7 +653,6 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-right: auto;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -1216,6 +1215,8 @@ img {
 
 .close-button {
   display: block;
+  position: absolute;
+  right: 0;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.2);

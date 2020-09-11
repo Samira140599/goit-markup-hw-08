@@ -23,6 +23,7 @@
   letter-spacing: 0.01em;
   color: $main-color;
 }
+
 .field {
   height: 40px;
   width: 328px;
@@ -33,7 +34,7 @@
   padding-left: 42px;
   outline-color: $accent-color;
   @media screen and (min-width: 1200px) {
-    width: 406px;
+    width: 409px;
   }
 
   &:focus-within + .tel-svg {
