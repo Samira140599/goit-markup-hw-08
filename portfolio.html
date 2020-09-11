@@ -18,35 +18,76 @@
         <a href="./index.html" class="logo">
           <span class="part-of-logo">Web </span> Studio
         </a>
-        <nav>
+    
+        <div class="desktop-nav">
           <ul class="site-nav list">
             <li class="item">
-              <a href="./index.html" class="site-nav-link">Студия</a>
+              <a href="./index.html" class="site-nav-link current">Студия</a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="site-nav-link current">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav-link">Портфолио</a>
             </li>
             <li class="item">
               <a href="#" class="site-nav-link">Контакты</a>
             </li>
           </ul>
-        </nav>
-        <ul class="list contacts-list">
-          <li>
-            <a class="contacts-link" href="mailto:info@devstudio.com">
-              <svg class="contacts-item">
-                <use href="./images/symbol-defs.svg#icon-envelope"></use>
-              </svg>info@devstudio.com</a>
-          </li>
     
-          <a class="contacts-link" href="tel:+380961111111"><svg class="contacts-item">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+          <ul class="list contacts-list">
+            <li>
+              <a class="contacts-link" href="mailto:info@devstudio.com">
+                <svg class="contacts-item">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>info@devstudio.com</a>
+            </li>
+    
+            <a class="contacts-link" href="tel:+380961111111"><svg class="contacts-item">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+    
+    
+    
+        <div class="mobile-menu">
+          <button type="button" class="menu-button" aria-expended="false" aria-controls="menu-container" data-menu-button>
+            <svg width=24px; height=16px aria-label="Переключатель мобильного меню">
+              <use href="./images/symbol-defs.svg#burger" class="icon-menu"></use>
+              <use href="./images/symbol-defs.svg#cross" class="icon-cross"></use>
             </svg>
-            +38 096 111 11 11</a>
-          </li>
-        </ul>
-      </div>
+          </button>
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav list">
+              <li class="item">
+                <a href="./index.html" class="site-nav-link current">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="site-nav-link">Портфолио</a>
+              </li>
+              <li class="item">
+                <a href="#" class="site-nav-link">Контакты</a>
+              </li>
+            </ul>
+            </nav>
+            <ul class="list contacts-list">
+              <li>
+                <a class="contacts-link" href="mailto:info@devstudio.com">
+                  <svg class="contacts-item">
+                    <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                  </svg>info@devstudio.com</a>
+              </li>
+    
+              <a class="contacts-link" href="tel:+380961111111"><svg class="contacts-item">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a>
+              </li>
+            </ul>
+          </div>
+        </div>
     </header>
+
     <main>
       <section class="portfolio-container">
         <h1 hidden>примеры работ</h1>

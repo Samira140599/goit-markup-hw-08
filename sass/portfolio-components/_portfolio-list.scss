@@ -9,7 +9,7 @@
     padding-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
-    padding-left: 170px;
+    padding-left: 215px;
     padding-bottom: 94px;
   }
 }
@@ -61,12 +61,6 @@
   opacity: 0;
   width: 100%;
   height: 100%;
-  @media screen and (min-width: 1200px) {
-    padding-left: 23px;
-    padding-right: 23px;
-    padding-top: 60px;
-    padding-right: 60px;
-  }
 }
 
 .portfolio-items:hover .portfolio-card,

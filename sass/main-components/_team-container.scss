@@ -12,21 +12,29 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (min-width: 460px) {
+    margin-left: 15px;
     width: 450px;
     height: 622px;
   }
   @media screen and (min-width: 768px) {
-    width: calc(50%-30);
-    margin-right: 30px;
+    width: calc(50% - 30px);
+
+    &:not(2n) {
+      margin-right: 0px;
+    }
     margin-bottom: 30px;
     width: 354px;
     height: 536px;
   }
   @media screen and (min-width: 1200px) {
+    margin-left: 0;
     width: 270px;
     height: 428px;
     &:not(:last-child) {
       margin-right: 30px;
+    }
+    &:first-child {
+      margin-left: 145px;
     }
   }
   &:not(:last-child) {
@@ -41,6 +49,9 @@
   letter-spacing: 3%;
   text-align: center;
   margin-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    margin-left: -100px;
+  }
 }
 .team-container {
   background-color: #f5f4fa;
@@ -54,10 +65,10 @@
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
+    padding-left: 15px;
     margin-top: 94px;
     padding-top: 34px;
-    padding-left: 15px;
-    width: 1600px;
+    width: 1575px;
     height: 600px;
   }
 }
