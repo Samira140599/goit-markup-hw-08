@@ -7,14 +7,11 @@
   border-bottom: 1px solid #ececec;
   width: 100%;
   @media screen and (min-width: 460px) {
-    width: 460px;
+    min-width: 480px;
     height: 60px;
   }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
   @media screen and (min-width: 1200px) {
-    width: 1570px;
+    min-width: 1570px;
     padding-left: 15px;
     padding-right: 15px;
   }

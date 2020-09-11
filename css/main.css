@@ -408,20 +408,14 @@ img {
 
 @media screen and (min-width: 460px) {
   .header-container {
-    width: 460px;
+    min-width: 480px;
     height: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .header-container {
-    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .header-container {
-    width: 1570px;
+    min-width: 1570px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -688,15 +682,9 @@ img {
   margin-bottom: 0;
 }
 
-.what-we-do-list,
-.clients-list {
-  margin-top: 50px;
-  margin-bottom: 0;
-  padding: 0;
-}
-
 .container {
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -722,8 +710,6 @@ img {
 
 .hero {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #212121;
 }
 
@@ -879,6 +865,10 @@ img {
 }
 
 .what-we-do-list {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1257,9 +1247,6 @@ textarea {
   .team-list-item:not(:last-child) {
     margin-right: 30px;
   }
-  .team-list-item:first-child {
-    margin-left: 145px;
-  }
 }
 
 .team-list-item:not(:last-child) {
@@ -1306,8 +1293,8 @@ textarea {
   .team-container {
     width: 100%;
     padding-left: 15px;
+    padding-bottom: 0;
     margin-top: 94px;
-    padding-top: 34px;
     width: 1575px;
     height: 600px;
   }
@@ -1359,7 +1346,8 @@ textarea {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0px auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1440,7 +1428,8 @@ textarea {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
