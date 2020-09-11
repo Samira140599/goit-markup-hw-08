@@ -461,11 +461,14 @@ img {
 }
 
 .menu-button {
+  position: absolute;
+  top: 10px;
+  right: 0;
   width: 24px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  margin-left: 196px;
+  margin-right: auto;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -506,8 +509,7 @@ img {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 480px;
-    height: 340px;
+    width: 100%;
   }
 }
 
@@ -532,13 +534,13 @@ img {
   display: flex;
 }
 
-@media screen and (min-width: 460px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .site-nav {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: 207px;
+    text-align: center;
   }
 }
 
@@ -636,7 +638,7 @@ img {
 }
 
 .contacts-list {
-  margin-left: 120px;
+  text-align: center;
 }
 
 .contacts-item {
