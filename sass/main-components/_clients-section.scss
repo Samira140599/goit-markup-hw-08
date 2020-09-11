@@ -44,7 +44,6 @@
   transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
-  width: 100%;
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
@@ -52,7 +51,6 @@
   }
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
-    width: 170px;
   }
 }
 
