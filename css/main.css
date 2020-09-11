@@ -696,27 +696,27 @@ img {
 }
 
 .container {
+  margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 @media screen and (min-width: 460px) {
   .container {
-    width: 460px;
+    min-width: 460px;
+    width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
 }
 
@@ -808,6 +808,10 @@ img {
 }
 
 .advantages-list {
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1438,6 +1442,10 @@ textarea {
 }
 
 .clients-list {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
