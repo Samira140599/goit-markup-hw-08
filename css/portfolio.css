@@ -409,7 +409,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-width: 1600px;
+    max-width: 1600px;
   }
 }
 
@@ -539,14 +539,14 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-footer {
-    margin-left: 76px;
+    padding-left: 76px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts-footer {
     margin-right: 70px;
-    margin-left: 215px;
+    padding-left: 200px;
   }
 }
 
@@ -582,8 +582,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -592,7 +590,14 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .header-container {
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .contacts-list {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -812,8 +817,8 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts-link:not(last-child) {
-    margin-left: 30px;
+  .contacts-link {
+    margin-right: 30px;
   }
 }
 
@@ -823,6 +828,12 @@ img {
 
 .contacts-list {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    padding-top: 16px;
+  }
 }
 
 .contacts-item {
@@ -1025,7 +1036,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .portfolio-container {
-    width: 1200px;
+    max-width: 1200px;
     margin-top: 94px;
     padding-bottom: 50px;
   }
@@ -1090,7 +1101,7 @@ img {
   width: fit-content;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 15px;
+  margin-left: 15px;
   padding-bottom: 60px;
 }
 
@@ -1107,7 +1118,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .porfolio-list {
-    padding-left: 215px;
     padding-bottom: 94px;
   }
 }

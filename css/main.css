@@ -397,8 +397,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -407,7 +405,14 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .header-container {
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .contacts-list {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -627,8 +632,8 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .contacts-link:not(last-child) {
-    margin-left: 30px;
+  .contacts-link {
+    margin-right: 30px;
   }
 }
 
@@ -638,6 +643,12 @@ img {
 
 .contacts-list {
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list {
+    padding-top: 16px;
+  }
 }
 
 .contacts-item {
@@ -671,8 +682,6 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media screen and (min-width: 460px) {
@@ -690,7 +699,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 100%;
+    max-width: 1200px;
   }
 }
 
@@ -708,7 +717,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    min-width: 1600px;
+    max-width: 1600px;
     margin-bottom: 94px;
   }
 }
@@ -798,10 +807,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .advantages-list {
+    padding-left: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 215px;
   }
 }
 
@@ -1273,11 +1282,9 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .team-container {
-    width: 100%;
-    padding-left: 15px;
+    max-width: 1600px;
     padding-bottom: 0;
     margin-top: 94px;
-    width: 1575px;
     height: 600px;
   }
 }
@@ -1502,7 +1509,7 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    min-width: 1600px;
+    max-width: 1600px;
   }
 }
 
@@ -1632,14 +1639,14 @@ textarea {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-footer {
-    margin-left: 76px;
+    padding-left: 76px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .contacts-footer {
     margin-right: 70px;
-    margin-left: 215px;
+    padding-left: 200px;
   }
 }
 
