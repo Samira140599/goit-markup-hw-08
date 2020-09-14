@@ -44,11 +44,6 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  @media screen and (min-width: 1200px) {
-    position: absolute;
-    top: 15px;
-    right: -212px;
-  }
 }
 .footer-label {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -74,11 +69,15 @@
 .footer-form-container {
   @media screen and (min-width: 460px) {
     text-align: center;
-  }
 
-  @media screen and (min-width: 1200px) {
-    margin-left: 83px;
-    position: relative;
-    display: flex;
+    @media screen and (min-width: 1200px) {
+      margin-left: 83px;
+      position: relative;
+      display: flex;
+    }
   }
+}
+.button-flex {
+  display: flex;
+  flex-direction: row;
 }

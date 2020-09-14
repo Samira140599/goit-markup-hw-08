@@ -468,11 +468,8 @@ img {
 .menu-button {
   position: absolute;
   top: 10px;
-  right: 0;
+  right: 22px;
   width: 24px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -1645,8 +1642,8 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .contacts-footer {
+    margin-left: 215px;
     margin-right: 70px;
-    padding-left: 200px;
   }
 }
 
@@ -1655,8 +1652,6 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
 }
 
@@ -1782,14 +1777,6 @@ textarea {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-button {
-    position: absolute;
-    top: 15px;
-    right: -212px;
-  }
-}
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-label {
     display: block;
@@ -1828,7 +1815,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 460px) and (min-width: 1200px) {
   .footer-form-container {
     margin-left: 83px;
     position: relative;
@@ -1836,6 +1823,16 @@ textarea {
     display: -ms-flexbox;
     display: flex;
   }
+}
+
+.button-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .backdrop {
